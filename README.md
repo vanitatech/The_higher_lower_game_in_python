@@ -1,4 +1,4 @@
-# Higher or Lower Game 🎮
+# Higher or Lower Game 
 
 A simple **Higher or Lower** guessing game built with Python.
 
@@ -13,7 +13,7 @@ The player is shown two randomly selected people/accounts and has to guess which
 5. If the answer is correct, the player's score increases.
 6. If the answer is incorrect, the game ends and the final score is displayed.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * `random` module
