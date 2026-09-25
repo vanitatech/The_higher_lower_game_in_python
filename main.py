@@ -7,14 +7,17 @@ import random
 def format_data():
     # Clear the screen
     print("\n" * 20)
-    """Takes account data and returns printable format."""
+    #Takes account data and returns printable format.
     print(logo)
     print(f"Compare A: {A["name"]}, {A["description"]}, {A["country"]}")
     print(vs)
     print(f"Against B: {B["name"]}, {B["description"]}, {B["country"]}")
 
 def check_answer(user_input, check_A, check_B):
-    """Takes a user's guess and the follower's counts and returns if they got it right or not"""
+    #Takes a user's guess and the follower's counts and returns if they got it right or not 
+    #If A has more followers than B then return true
+    #If B has more followers then return true
+    #If opposite happens then return false
     if check_A > check_B:
         return user_input == "A"
     else:
@@ -23,14 +26,12 @@ def check_answer(user_input, check_A, check_B):
 score = 0
 should_continue = True
 
-
-
 while should_continue:
-    """Choose two string randomly from the list"""
+    #Choose two string randomly from the list
     A, B = random.sample(data,2)
     format_data()
     
-    user_input = input("Who has more followers? Type 'A' or 'B': ")
+    user_input = input("Who has more followers? Type 'A' or 'B': ").lower()
     check_A = A["follower_count"]
     check_B = B["follower_count"]
     
